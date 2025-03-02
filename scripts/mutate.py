@@ -50,9 +50,9 @@ class Mutator():
     chr1    150 200 S
     specifies that the associated genome interval sequence will be shuffled.
     Three possible mutations are defined :
-      - S : shuffle
-      - I : inversion
-      - M : mask
+      - shuffle : shuffle
+      - inversion : inversion
+      - mask : mask
 
     Parameters
     ----------
