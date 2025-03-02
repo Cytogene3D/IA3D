@@ -47,12 +47,12 @@ class Mutator():
     genome sequence.
 
     Each interval is associated with a particular mutation, for example
-    chr1    150 200 S
+    1	300	500	.	shuffle1	+	shuffle
     specifies that the associated genome interval sequence will be shuffled.
     Three possible mutations are defined :
-      - shuffle : shuffle
-      - inversion : inversion
-      - mask : mask
+      - shuffle
+      - inversion
+      - mask
 
     Parameters
     ----------
