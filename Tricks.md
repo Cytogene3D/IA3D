@@ -4,29 +4,25 @@ In Python's `argparse`, you can enable, require, or restrict arguments based on 
 
 ---
 
-## **1. Conditionally Require an Argument**
-You can enforce an argument's requirement based on another argument's value using `parser.error()`.
+## 1. Mutually Exclusive Arguments
+If two arguments should not be used together, use add_mutually_exclusive_group().
 
-### **Example: Require `--bar` only if `--foo` is "yes"**
+### Example: --save or --load, but not both
 ```python
-import argparse
-
 parser = argparse.ArgumentParser()
-parser.add_argument("--foo", choices=["yes", "no"], required=True, help="Enable extra options")
-parser.add_argument("--bar", help="Only required if --foo is 'yes'")
+
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument("--save", action="store_true", help="Save the model")
+group.add_argument("--load", action="store_true", help="Load a saved model")
 
 args = parser.parse_args()
-
-# Enforce conditional requirement
-if args.foo == "yes" and args.bar is None:
-    parser.error("--bar is required when --foo is 'yes'")
-
 print(args)
 ```
-## **2. Enable or Restrict Arguments Based on Another Argument
+
+## 2. Enable or Restrict Arguments Based on Another Argument
 If an argument should only be used when another argument is provided, enforce this manually.
 
-### **Example: --logfile only allowed if --verbose is set
+### Example: --logfile only allowed if --verbose is set
 ```python
 parser = argparse.ArgumentParser()
 parser.add_argument("--verbose", action="store_true", help="Enable verbose mode")
@@ -40,4 +36,6 @@ if args.logfile and not args.verbose:
 
 print(args)
 ```
+
+
 
