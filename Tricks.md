@@ -36,6 +36,16 @@ if args.logfile and not args.verbose:
 
 print(args)
 ```
+# Controlling reproducibility with random.sample()
+In order to control reproductibility, the seed() method is used to initialize the random number generator.
+One has to use random.seed() with the same value prior to every invocation of random.sample()
+
+```python
+random.seed(3)
+random.sample(subseq, len(subseq))
+```
+Here random.sample() will always return the same "random" sample
+
 
 
 
