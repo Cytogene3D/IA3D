@@ -10,4 +10,8 @@ Two sets of matrcices,
 wget https://web-genobioinfo.toulouse.inrae.fr/~faraut/IA3D/observed.tar.gz
 wget https://web-genobioinfo.toulouse.inrae.fr/~faraut/IA3D/wildtype.tar.gz
 ```
+Consider recoding the R code in notebooks/OrcaMatrices.ipynb in python
+
+
+
 
