@@ -36,7 +36,14 @@ if args.logfile and not args.verbose:
 
 print(args)
 ```
-# Comparing mutated genome to the original genome
+## 3. Plot axis ticks in terms of megabases 
+
+Using the EngFormatter
+
+See https://cooltools.readthedocs.io/en/latest/notebooks/viz.html#Plotting-subregions
+
+
+## 4. Comparing mutated genome to the original genome
 
 First install blastn in the IA3D env
 ```
@@ -58,7 +65,7 @@ mamba install bioconda::minimap2
 minimap2 -x sr input.fa output.fa --cs=long | paftools.js view -
 ```
 
-# Controlling reproducibility with random.sample()
+## 5. Controlling reproducibility with random.sample()
 In order to control reproductibility, the seed() method is used to initialize the random number generator.
 One has to use random.seed() with the same value prior to every invocation of random.sample()
 
