@@ -47,13 +47,13 @@ cd data
 wget https://web-genobioinfo.toulouse.inrae.fr/~faraut/IA3D/bosTau9_chr1_1_32Mb.fa
 cd ..
 ```
-
+Interactive shell on a gpu node, simply to test the installation.\
+The command cuda.is_available() checks whether a CUDA-capable GPU is available and can be used.
 ```
-conda activate orca_env_gpu
+conda activate orca_env
 export PYTHONPATH="PATH_TO/Orca/orca":$PYTHONPATH
 
-# Interactive shell on a gpu node
-srun --mem 16G -p gpuq --gres=gpu:A100_1g.10gb:1 --pty bash
+srun --mem 8G -p gpuq --gres=gpu:A100_1g.10gb:1 --pty bash
 python -c 'import torch; print(torch.cuda.is_available())'
 ```
 
