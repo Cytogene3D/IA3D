@@ -28,4 +28,8 @@ Take a look at the notebook Cooltools.ipynb in notebooks.
 1. By hand
 2. Following the implementation of cis_eig
    https://cooltools.readthedocs.io/en/latest/_modules/cooltools/api/eigdecomp.html#cis_eig
+3. More simply using the function expected_cis
+   https://cooltools.readthedocs.io/en/latest/_modules/cooltools/api/expected.html#expected_cis
+
+see also https://github.com/open2c/open2c_examples/blob/master/contacts_vs_distance.ipynb
 
