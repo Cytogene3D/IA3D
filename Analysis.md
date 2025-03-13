@@ -23,4 +23,9 @@ The matrices are included in a file in mcool format.
 
 Take a look at the notebook Cooltools.ipynb in notebooks.
 
+## Computing observed over expected matrices
+
+1. By hand
+2. Following the implementation of cis_eig
+   https://cooltools.readthedocs.io/en/latest/_modules/cooltools/api/eigdecomp.html#cis_eig
 
