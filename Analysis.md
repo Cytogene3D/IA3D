@@ -23,6 +23,12 @@ The matrices are included in a file in mcool format.
 
 Take a look at the notebook Cooltools.ipynb in notebooks.
 
+## Orca predictions for the manuscript Chr9 region
+
+```bash
+wget https://web-genobioinfo.toulouse.inrae.fr/~faraut/IA3D/human_ESC.tar.gz
+```
+
 ## Computing observed over expected matrices
 
 1. By hand
