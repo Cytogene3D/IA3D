@@ -36,6 +36,14 @@ python setup.py build_ext --inplace
 python setup.py install 
 ```
 
+
+#### To correct the import error
+#### see https://github.com/conda/conda-libmamba-solver/issues/544
+```
+ln -s libstdc++.so.6.0.33 libstdc++.so.6
+```
+
+
 ### Testing Orca
 A simple test with the process_sequence.py script
 
