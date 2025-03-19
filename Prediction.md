@@ -64,6 +64,19 @@ export PYTHONPATH="PATH_TO/Orca/orca":$PYTHONPATH
 srun --mem 8G -p gpuq --gres=gpu:A100_1g.10gb:1 --pty bash
 python -c 'import torch; print(torch.cuda.is_available())'
 ```
+### Testing without GPU
+
+se connecter à un noeud du cluster
+```
+srun --mem 16G --pty bash
+```
+puis lancer la commmande
+```
+predict=scripts/process_sequence.py
+genome=data/bosTau9_chr1_1_32Mb.fa
+python $predict --fasta $genome --chrom 1 --outprefix out --nocuda
+```
+Ne pas oublier de se déconnecter Ctlr+D
 
 
 
