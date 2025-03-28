@@ -17,6 +17,10 @@ see https://stackoverflow.com/questions/5055042/whats-the-best-practice-using-a-
 ```python
 from config import Config
 ```
+## Call a method based on the string corresponding to its name
+
+see the ObjectAttributesAsString.ipynb notebook
+
 
 
 
