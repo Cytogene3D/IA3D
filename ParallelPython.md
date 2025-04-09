@@ -3,6 +3,7 @@
 Suppose we have a python function counting the number of nucleotides of a chromosome
 
 ```python
+from pysam import FastaFile
 def count_nucleotides(genome, chrom):
     with FastaFile(genome) as fasta_handle:
         chromosome = fasta_handle.fetch(chrom)
@@ -12,6 +13,7 @@ def count_nucleotides(genome, chrom):
 To parrallelize by chromosome use ThreadPoolExecutor from concurrent.futures
 
 ```python
+from concurrent.futures import ThreadPoolExecutor, as_completed
 def parallel_scan(genome, chromosomes):
     results = {}
     num_processes = 4
