@@ -4,11 +4,11 @@
 ### A site containing almost everything 
 https://dozmorovlab.github.io/CTCF
 
-See section **CTCF predicted and experimental data**:  _in silico_ predictions as well as Encode data are available
+- Install the R package to retrieve _in silico_ predicted binding sites for hg38 (use rtracklayer library to export to bed)
 
-The R package can also be tested.
+- See section **CTCF predicted and experimental data**:  for Encode Encode data on hg38
 
-### Alternative: Detecting CTCF _by hand_ using Fimo
+### Alternative: Detecting CTCF _manually_ using Fimo
 https://meme-suite.org/meme/doc/fimo.html
 
 #### Install Fimo using conda (suggestion)  
