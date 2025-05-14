@@ -10,7 +10,24 @@ The following command will open an interactive session on a cluster node
 srun --mem 12G --pty bash
 ```
 #### A simple bash script
-see Submit a simple job
+
+```bash
+#!/bin/bash
+#SBATCH -J JobName
+#SBATCH -e JobName.err
+#SBATCH -o JobName.log
+#SBATCH -p workq
+#SBATCH --mail-type=END,FAIL
+#SBATCH --export=ALL
+#SBATCH --cpus-per-task=1    #   CPUS
+#SBATCH --mem=8G             #   MEM
+
+# Your command
+
+```
+
+
+see  also Submit a simple job
 
 
 
