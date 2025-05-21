@@ -17,7 +17,7 @@ Now install libstdcxx-ng==13.2.0 then pytabix :
 ```
 conda activate orca_env
 mamba install conda-forge::libstdcxx-ng==13.2.0
-mamba install pytabix
+mamba install bioconda::pytabix
 ```
 
 
