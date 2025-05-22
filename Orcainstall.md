@@ -20,6 +20,15 @@ mamba install conda-forge::libstdcxx-ng==13.2.0
 mamba install bioconda::pytabix
 ```
 
+### Installing snakemake
+
+``
+mamba install -c conda-forge -c bioconda snakemake
+pip install snakemake-executor-plugin-slurm`
+```
+
+
+
 
 
 
