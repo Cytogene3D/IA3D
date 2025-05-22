@@ -22,7 +22,7 @@ mamba install bioconda::pytabix
 
 ### Installing snakemake
 
-``
+```
 mamba install -c conda-forge -c bioconda snakemake
 pip install snakemake-executor-plugin-slurm`
 ```
