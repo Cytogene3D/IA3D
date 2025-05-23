@@ -1,4 +1,6 @@
-### Comparing two fasta sequences
+## Comparing two fasta sequences
+
+### Doplot
 
 #### Web interface 
  https://dgenies.toulouse.inra.fr
