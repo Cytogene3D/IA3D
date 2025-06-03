@@ -9,6 +9,6 @@ On genobioinfo
 ```
 search_module kentUtils
 module load bioinfo/kentUtils/472
-bigWigToBedGraph
+bigWigToBedGraph -chrom=chr1 hg38.phastCons20way.bw hg38.phastCons20way.chr1.bed
 ```
-
+Using a python script, chr1.bed is summarized into a conservation score (meand and median) for every non-overlaping window of size 50bp.
