@@ -13,7 +13,7 @@ Proposed genomes:
 - earthworm (Amynthas aspergillum) https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_049355025.1
 
 
-## Concserved elements
+## Conserved elements
 ### PhastCons 
 Output from PhastCons can be obtained here  
 https://hgdownload.cse.ucsc.edu/goldenPath/hg38/phastCons20way
