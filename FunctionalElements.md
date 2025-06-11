@@ -25,6 +25,16 @@ see https://github.com/Cytogene3D/IA3D/blob/main/CTCF.md
 Experimental CTCF binding sites data can be found here  
 https://insulatordb.uthsc.edu/download/allcomp.txt.gz 
 
+## ENCODE 
+### ChiP-seq file format
+Bed format for ChiP-seq is Bed6 for narrow peak  
+https://genome.ucsc.edu/FAQ/FAQformat.html#format12
+
+Peaks were detected by MACS  
+  https://macs3-project.github.io/MACS/docs/narrowPeak.html
+
+
+
 
 
 
