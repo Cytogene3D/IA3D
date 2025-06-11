@@ -27,11 +27,15 @@ https://insulatordb.uthsc.edu/download/allcomp.txt.gz
 
 ## ENCODE 
 ### ChiP-seq file format
-Bed format for ChiP-seq is Bed6 for narrow peak  
+Bed format for ChiP-seq is Bed6 (is it narrow peak)  
 https://genome.ucsc.edu/FAQ/FAQformat.html#format12
 
 Peaks were detected by MACS  
   https://macs3-project.github.io/MACS/docs/narrowPeak.html
+
+Understanding MAC2 peak calling  
+https://hbctraining.github.io/Intro-to-ChIPseq/lessons/05_peak_calling_macs.html
+  
 
 
 
