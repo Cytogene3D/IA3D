@@ -1,5 +1,5 @@
 
-
+Python code to generate random intervals
 
 ```python
 import random
@@ -13,7 +13,7 @@ def read_bed(bedfile):
             excluded[int(start):int(end)] = True
     return excluded
 
-def random_intervals(excluded, region_size=32_000_000,  interval_size=240, num_intervals=10000):
+def random_intervals(excluded, region_size=32_000_000,  interval_size=312, num_intervals=10000):
     # Generate valid random intervals
     random_intervals = []
     attempts = 0
