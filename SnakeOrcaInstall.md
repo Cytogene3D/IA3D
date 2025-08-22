@@ -13,7 +13,6 @@ mamba activate snakeorca_env
 git clone https://github.com/jzhoulab/orca.git
 cd orca
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
-conda deactivate
 ```
 
 Log on a gpu node and make sure cuda is available
