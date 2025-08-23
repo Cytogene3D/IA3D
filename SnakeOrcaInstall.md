@@ -56,11 +56,14 @@ cd snakeorca
 ## Testing the installation
 
 ```
-ORCA_DIR=##ROOT_ORCA_DIR##
-export PYTHONPATH="$ORCA_DIR":$PYTHONPATH
+ORCA_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/orca
+ORCAMUT_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/snakeorca/scripts/mutations
+ORCAMAT_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/snakeorca/scripts/orcanalyse
+ORCPROCESS_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/snakeorca/scripts/orca_predictions
 
-srun --mem 16G -p gpuq --gres=gpu:A100_1g.10gb:1 --pty bash
-python -c 'import torch; print(torch.cuda.is_available())'
+export PYTHONPATH="$ORCA_DIR":"$ORCAMUT_DIR":"$ORCAMAT_DIR":"$ORCPROCESS_DIR":$PYTHONPATH
+
+
 
 ```
 
