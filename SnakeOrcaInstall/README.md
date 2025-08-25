@@ -2,7 +2,7 @@
 
 ## Constructing a conda env
 
-Following from the Orca installation instructions  
+Following the Orca installation instructions  
 https://github.com/jzhoulab/orca
 
 ### Installing the conda snake orca env
@@ -10,8 +10,6 @@ https://github.com/jzhoulab/orca
 ```
 mamba env create -f snakeorca_env_part1.yml
 mamba activate snakeorca_env
-git clone https://github.com/jzhoulab/orca.git
-cd orca
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
 
@@ -35,6 +33,18 @@ mamba install conda-forge::libstdcxx-ng==13.2.0
 mamba install bioconda::pytabix
 ```
 
+**Installing Orca**
+
+```
+git clone https://github.com/jzhoulab/orca.git
+cd orca
+wget https://zenodo.org/record/6234936/files/resources_core.tar.gz
+wget https://zenodo.org/record/6234936/files/resources_mcools.tar.gz
+wget https://zenodo.org/record/4594676/files/resources_extra.tar.gz
+tar xf resources_core.tar.gz
+tar xf resources_mcools.tar.gz
+tar xf resources_extra.tar.gz
+```
 
 **Installing snakemake**
 
