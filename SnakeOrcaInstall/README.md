@@ -52,6 +52,12 @@ tar xf resources_extra.tar.gz
 conda activate snakeorca_env
 mamba install -c conda-forge -c bioconda snakemake
 pip install snakemake-executor-plugin-slurm
+
+```
+**Installing plotnine**
+
+```
+mamba install conda-forge::plotnine
 ```
 
 ### Installing SnakeOrca
