@@ -66,6 +66,10 @@ cd snakeorca
 ## Testing the installation
 
 ```
+cd orca_snake
+
+conda activate snakeorca_env
+
 ORCA_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/orca
 ORCAMUT_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/snakeorca/scripts/mutations
 ORCAMAT_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTest/snakeorca/scripts/orcanalyse
@@ -73,7 +77,7 @@ ORCPROCESS_DIR=/work/genphyse/genome3D/Thomas/dynawork/Stages/Florian/InstallTes
 
 export PYTHONPATH="$ORCA_DIR":"$ORCAMUT_DIR":"$ORCAMAT_DIR":"$ORCPROCESS_DIR":$PYTHONPATH
 
-
+snakemake --configfile config.yaml --profile genotoul -j 1 -p -n
 
 ```
 
